@@ -7,6 +7,10 @@ var express = require('express'),
     tasks = require("./tasks"),
     mongoose = require('mongoose');
 
+
+// Get yo' models
+// var User = require("./models/user.js"),
+
 var app = express();
 var server = require('http').createServer(app);
 
@@ -42,21 +46,6 @@ db.once('open', function callback () {
   console.log('opened');
 });
 
-
-/*
- * Create the db schemas here for now.
- * TODO Move this to a more modular place
-
-
-  // Example schema
-  var articleSchema = mongoose.Schema({
-      title: String,
-      content: String,
-      author: String
-  });
-
-  var Article = mongoose.model('Article', articleSchema);
-*/
 
 server.listen(port, function(){
 });
