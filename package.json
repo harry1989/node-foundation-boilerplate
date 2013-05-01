@@ -9,7 +9,8 @@
     "express": ">= 2.5.8",
     "mongodb": ">=0.9.9-4",
     "request": ">= 2.9.152",
-    "jade": ">= 0.0.1"
+    "jade": ">= 0.0.1",
+    "mongoose": ""
   },
   "scripts": {
     "start": "app.js"
